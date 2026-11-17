@@ -1,0 +1,50 @@
+/* video-to-doc print stylesheet (A4). Written from scratch for this package, MIT. */
+@page { size: A4; margin: 18mm 17mm 20mm; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  margin: 0; color: #1d1b18; background: #fff;
+  font: 10.5pt/1.55 Georgia, "Times New Roman", serif;
+  hyphens: auto; orphans: 3; widows: 3;
+}
+h1, h2, h3, .kicker, .meta, table, kbd, .box, .quiz {
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+h1 { font-size: 24pt; line-height: 1.15; margin: 0 0 6pt; letter-spacing: -0.01em; }
+h2 { font-size: 14pt; margin: 18pt 0 6pt; break-after: avoid; }
+h3 { font-size: 11.5pt; margin: 12pt 0 4pt; break-after: avoid; }
+p { margin: 0 0 7pt; }
+a { color: #8a3b12; text-decoration: none; }
+section { break-inside: avoid; }
+
+/* Cover */
+.cover { border-bottom: 2px solid #1d1b18; padding: 0 0 12pt; margin: 0 0 14pt; }
+.kicker { text-transform: uppercase; letter-spacing: 0.12em; font-size: 8pt; color: #8a3b12; margin-bottom: 8pt; }
+.sub { font-size: 12.5pt; color: #4a463f; margin: 0 0 8pt; }
+.meta { font-size: 8pt; color: #6d675d; }
+
+/* Tutorial */
+h2 .n { color: #8a3b12; margin-right: 6pt; }
+.box { border-left: 3px solid #6d675d; background: #f5f2ec; padding: 7pt 10pt; margin: 8pt 0; font-size: 9.5pt; break-inside: avoid; }
+.box.k-tip { border-color: #2f6b4f; background: #eef5f0; }
+.box.k-key { border-color: #8a3b12; background: #f8efe8; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; margin: 8pt 0; break-inside: avoid; }
+.grid2 > div { padding: 7pt 10pt; font-size: 9.5pt; border-top: 3px solid; background: #f7f6f3; }
+.grid2 .do { border-color: #2f6b4f; }
+.grid2 .dont { border-color: #a3312a; }
+.grid2 ul { margin: 0; padding-left: 14pt; }
+.quiz { border: 1px solid #d8d2c6; padding: 8pt 12pt; margin: 10pt 0; break-inside: avoid; }
+.quiz .answers { border-top: 1px dashed #d8d2c6; margin-top: 6pt; padding-top: 6pt; font-size: 9pt; color: #4a463f; }
+
+/* Tables and code */
+table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9pt; break-inside: avoid; }
+th, td { text-align: left; vertical-align: top; padding: 4pt 6pt; border-bottom: 1px solid #e3ded4; }
+th { border-bottom: 1.5px solid #1d1b18; }
+kbd, code { font-family: Consolas, "SF Mono", Menlo, monospace; font-size: 8.5pt; background: #f0ece4; border-radius: 3px; padding: 0 3pt; }
+kbd { border: 1px solid #d8d2c6; }
+
+/* Article and script */
+.lead { font-size: 12pt; color: #3a3631; margin-bottom: 12pt; }
+blockquote { margin: 10pt 0; padding: 2pt 0 2pt 12pt; border-left: 3px solid #8a3b12; font-style: italic; color: #3a3631; break-inside: avoid; }
+ul, ol { margin: 0 0 7pt; padding-left: 16pt; }
+li { margin-bottom: 2pt; }

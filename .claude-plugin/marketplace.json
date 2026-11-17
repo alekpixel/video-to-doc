@@ -1,0 +1,11 @@
+{
+  "name": "video-to-doc",
+  "owner": { "name": "alekpixel" },
+  "plugins": [
+    {
+      "name": "video-to-doc",
+      "source": "./",
+      "description": "Video link to PDF: local transcription, then a tutorial, a clean script or an article."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "video-to-doc",
+  "version": "0.1.0",
+  "description": "Turns a video link into a ready-to-read PDF (tutorial, clean script or article), with local Whisper transcription and headless Chrome or Edge. No API key.",
+  "author": { "name": "alekpixel" },
+  "homepage": "https://github.com/alekpixel/video-to-doc",
+  "repository": "https://github.com/alekpixel/video-to-doc",
+  "license": "MIT",
+  "keywords": ["video", "transcription", "whisper", "pdf", "yt-dlp", "windows", "skills"]
+}
